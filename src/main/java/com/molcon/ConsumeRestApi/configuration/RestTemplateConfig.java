@@ -7,15 +7,9 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 public class RestTemplateConfig {
-
-
     @Bean
-    public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder) {
-        RestTemplate restTemplate = new RestTemplate();
-        restTemplate = restTemplateBuilder
-                .basicAuthentication("admin", "2k231103_MCPL123")
-                .build();
-        return restTemplate;
+   public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder) {
+        return restTemplateBuilder.build();
     }
 
 }
