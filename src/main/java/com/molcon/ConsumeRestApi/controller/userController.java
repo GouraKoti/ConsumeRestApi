@@ -26,9 +26,9 @@ public class userController {
 
     String mongoUri = "http://localhost:8080/api/henkel/";
 
-    @GetMapping("/mcntl")
+    @GetMapping("/extUrl")
     public ResponseEntity<?> getUsers() {
-        String uri = "http://192.168.6.66:9989/mcntl-support-api/api/v1/getUsers?day=1";
+        String uri = "http://your_external_url";
 
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.set("Authorization", "Basic YWRtaW46MmsyMzExMDNfTUNQTA==");
